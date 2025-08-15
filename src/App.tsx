@@ -12,6 +12,8 @@ function App() {
       <header className="App-header">
         <h1>Money Game Strategy Analysis</h1>
         <p>Comparing different betting strategies through simulation</p>
+        <p>You have $5 and your goal is to reach $25 in earnings cumulatively by betting your money. Each bet you place has a 35% chance of winning and 65% chance of losing. That means, if you’re starting with $5 and bet $3, you have a 35% chance of winning $3 to have a new balance of $8, and a 65% chance of losing $3 to have a new balance of $2. For every turn, the minimum bet you can place is $1 and the maximum bet you can place is your current balance. If your balance reaches $0 and you haven’t reached the cumulative goal of $25 yet, you fail.
+        What betting strategy do you use to maximize your chances of reaching the goal?</p>
         
         <div className="simulation-controls">
           <label htmlFor="simCount">Total Simulations:</label>
