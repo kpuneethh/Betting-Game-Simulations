@@ -2,22 +2,20 @@
 
 A React-based web application that simulates and analyzes different betting strategies for a money-based gambling game. The app compares three distinct strategies through Monte Carlo simulations and visualizes the results with interactive charts.
 
-## Features
+Try it out: https://kpuneethh.github.io/Betting-Game-Simulations
 
-- **All-In Strategy**: Bets all available money on each bet
-- **Bet $5 Strategy**: Consistently bets $5 (or all available if less)
-- **Bet $1 Strategy**: Places minimal $1 bets on each round
-- Real-time simulation results with statistics
-- Interactive line charts showing money balance over time
-- Mathematical expectation calculations
-- Responsive design for all devices
+## Problem Statement
 
-## Prerequisites
+You have $5 and your goal is to reach $25 in earnings cumulatively by betting your money. Each bet you place has a 35% chance of winning and 65% chance of losing. That means, if you’re starting with $5 and bet $3, you have a 35% chance of winning $3 to have a new balance of $8, and a 65% chance of losing $3 to have a new balance of $2. For every turn, the minimum bet you can place is $1 and the maximum bet you can place is your current balance. If your balance reaches $0 and you haven’t reached the cumulative goal of $25 yet, you fail.
+
+What betting strategy do you use to maximize your chances of reaching the goal?
+
+## Local Deployment
+
+### Prerequisites
 
 - Node.js (version 16 or higher)
 - npm or yarn package manager
-
-## Local Deployment
 
 ### 1. Install Dependencies
 
@@ -93,16 +91,6 @@ src/
 - **Recharts** - Charting library for data visualization
 - **CSS3** - Modern styling with responsive design
 
-## Customization
-
-You can modify the simulation parameters in each component:
-
-- Change starting money balance
-- Adjust win probability
-- Modify goal amount
-- Update number of simulations
-- Customize chart colors and styling
-
 ## Browser Support
 
 - Chrome (latest)
@@ -136,15 +124,3 @@ You can modify the simulation parameters in each component:
    # Check TypeScript configuration
    npx tsc --noEmit
    ```
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-MIT License - see LICENSE file for details
