@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Chip-Game-Simulations/',
+  base: '/Betting-Game-Simulations/',
   server: {
     port: 3000,
     open: true
