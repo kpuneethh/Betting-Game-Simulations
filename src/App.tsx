@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Money Game Strategy Analysis</h1>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>
           <h1>Money Game Strategy Analysis</h1>
           <p style={{ marginBottom: "20px" }}>Comparing different betting strategies through simulation</p>
