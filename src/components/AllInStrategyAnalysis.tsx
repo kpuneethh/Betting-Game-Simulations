@@ -49,7 +49,7 @@ const AllInStrategyAnalysis = ({ simCount }: AllInStrategyAnalysisProps) => {
       totalBets++;
       moneyBalance = 0; // Lose all money initially
       
-      if (Math.random() < 0.35) {
+      if (Math.random() < 0.33) {
         // Win: get back bet + winnings (double your money)
         moneyBalance = betAmount * 2;
         cumulativeEarnings += betAmount; // Winnings count toward goal
@@ -231,7 +231,7 @@ const AllInStrategyAnalysis = ({ simCount }: AllInStrategyAnalysisProps) => {
         <p>
           The <strong>All-In Strategy</strong> bets all available money on each bet. 
           This high-risk approach can lead to quick wins but also rapid losses.
-          With a 35% win probability, this strategy has a negative expected value
+          With a 33% win probability, this strategy has a negative expected value
           and will lose money in the long run.
         </p>
       </div>

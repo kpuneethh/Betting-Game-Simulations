@@ -31,8 +31,8 @@ const Bet1StrategyAnalysis = ({ simCount }: Bet1StrategyAnalysisProps) => {
   
   // Mathematical expectation calculation
   const calculateExpectedValue = (numBets: number): number => {
-    const pWin = 0.35;
-    const pLose = 0.65;
+    const pWin = 0.33;
+    const pLose = 0.67;
     const expectedNetChange = numBets * (pWin * 1 + pLose * (-1));
     return expectedNetChange;
   };
@@ -61,7 +61,7 @@ const Bet1StrategyAnalysis = ({ simCount }: Bet1StrategyAnalysisProps) => {
       totalBets++;
       moneyBalance -= 1; // Lose the bet amount first
       
-      if (Math.random() < 0.35) {
+      if (Math.random() < 0.33) {
         // Win: get back bet + winnings
         moneyBalance += 2; // Get back the $1 bet + $1 winnings
         cumulativeEarnings += 1; // Only the winnings count toward goal
@@ -236,7 +236,7 @@ const Bet1StrategyAnalysis = ({ simCount }: Bet1StrategyAnalysisProps) => {
         <p>
           The <strong>Bet $1 Strategy</strong> places minimal $1 bets on each round.
           This low-risk approach allows for many bets but has a negative expected value
-          (-0.3 dollars per bet). While it provides the most stability, it requires
+          (-0.34 dollars per bet). While it provides the most stability, it requires
           significantly more bets to reach the $25 earnings goal.
         </p>
         <div className="expected-value">

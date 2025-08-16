@@ -6,7 +6,7 @@ Try it out: https://kpuneethh.github.io/Betting-Game-Simulations
 
 ## Problem Statement
 
-You have $5 and your goal is to reach $25 in earnings cumulatively by betting your money. Each bet you place has a 35% chance of winning and 65% chance of losing. That means, if you’re starting with $5 and bet $3, you have a 35% chance of winning $3 to have a new balance of $8, and a 65% chance of losing $3 to have a new balance of $2. For every turn, the minimum bet you can place is $1 and the maximum bet you can place is your current balance. If your balance reaches $0 and you haven’t reached the cumulative goal of $25 yet, you fail.
+You have $5 and your goal is to reach $25 in earnings cumulatively by betting your money. Each bet you place has a 33% chance of winning and 67% chance of losing. That means, if you’re starting with $5 and bet $3, you have a 33% chance of winning $3 to have a new balance of $8, and a 67% chance of losing $3 to have a new balance of $2. For every turn, the minimum bet you can place is $1 and the maximum bet you can place is your current balance. If your balance reaches $0 and you haven’t reached the cumulative goal of $25 yet, you fail.
 
 What betting strategy do you use to maximize your chances of reaching the goal?
 
@@ -61,7 +61,7 @@ src/
 ## Game Rules
 
 - **Starting Balance**: $5
-- **Win Probability**: 35% (0.35)
+- **Win Probability**: 33% (0.33)
 - **Goal**: Accumulate $25 in cumulative earnings
 - **Win Outcome**: Get back bet amount + winnings (double your money)
 - **Loss Outcome**: Lose the bet amount
@@ -80,7 +80,7 @@ src/
 
 ### Bet $1 Strategy
 - **Risk Level**: Low
-- **Expected Value**: Negative (-0.3 dollars per bet)
+- **Expected Value**: Negative (-0.34 dollars per bet)
 - **Characteristics**: Maximum stability, requires many bets
 
 ## Technologies Used

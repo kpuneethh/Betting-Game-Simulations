@@ -49,7 +49,7 @@ const Bet5StrategyAnalysis = ({ simCount }: Bet5StrategyAnalysisProps) => {
       totalBets++;
       moneyBalance -= betAmount; // Remove bet amount
       
-      if (Math.random() < 0.35) {
+      if (Math.random() < 0.33) {
         // Win: get back bet + winnings
         moneyBalance += betAmount * 2; // Get back double
         cumulativeEarnings += betAmount; // Winnings count toward goal
@@ -232,7 +232,7 @@ const Bet5StrategyAnalysis = ({ simCount }: Bet5StrategyAnalysisProps) => {
           The <strong>Bet $5 Strategy</strong> consistently bets $5 on each bet
           (or all available money if less than $5). This moderate-risk approach
           provides more stability than all-in but still has a negative expected value
-          due to the 35% win probability.
+          due to the 33% win probability.
         </p>
       </div>
     </div>
